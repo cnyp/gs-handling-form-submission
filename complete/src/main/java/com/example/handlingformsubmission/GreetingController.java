@@ -21,4 +21,10 @@ public class GreetingController {
 		return "result";
 	}
 
+	@GetMapping("/greetingResults")
+	public String greetingResults() {
+		// String mgs = greetingRepository.findAll();
+		return "msgs";
+	}
+
 }
